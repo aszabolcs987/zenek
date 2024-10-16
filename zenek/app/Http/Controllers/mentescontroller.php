@@ -7,19 +7,18 @@ use App\Models\zenek;
 
 class mentescontroller extends Controller
 {
-    // létrehozok egy függvényt
     public function save(Request $request)
     {
-        // példányosítom a zenek modelt
+        // zenek model peldanyositom
         $zenek = new zenek();
-        // a tábla az input mezők értékeit kapják meg
+        // a tabla mezoi feltoltom az inputba kapott adatokat
         $zenek->cim = $request->cim;
         $zenek->eloado = $request->eloado;
         $zenek->megjelenes= $request->megjelenes;
         $zenek->megtekintes= $request->megtekintes;
         $zenek->like= $request->like;
 
-        // ha sikerül menteni, akkor átdob a success oldalra
+        // ha sikerul menteni, akkor bedobja a success oldalt
         if($zenek->save())
         {
             return redirect('/success');
