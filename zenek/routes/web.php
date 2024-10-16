@@ -8,8 +8,8 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-// Adatok mentése az adatbázisba (POST = FELTÖLTÉS)
+// adatok mentese adatbazisba (POST = feltoltes)
 Route::post('/', [mentescontroller::class, 'save']);
 
-// Az adatbázis adatainak lekérése a /success oldalra (GET = LEKÉRÉS)
+// adatok lekerese az adatbazisbol (GET = lekeres)
 Route::get('/success', [kiiratascontroller::class, 'getContacts']);
