@@ -11,6 +11,6 @@ class zenek extends Model
     use HasFactory;
     // ne adjon hozza pluszba modositasi es mentesi idpot
     public $timestamps = false;
-    // és, hogy a tábla neve zenek lesz
+    // a tabla neve zenek lesz
     protected $table = 'zenek';
 }
