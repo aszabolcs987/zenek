@@ -21,7 +21,7 @@
                 <th>Megtekintések</th>
                 <th>Likeok</th>
             </tr>
-            <!-- Egy foreach-el végig megyek az adatokon, amit a függvény adott vissza -->
+            <!-- egy foreach kiir minden mentett adatot -->
             @foreach ($zenek as $zene)
             <tr>
                 <td>{{ $zene->cim }}</td>
