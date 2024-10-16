@@ -10,7 +10,7 @@ return new class extends Migration
     public function up(): void
     {
         // php artisan make:migration zenek
-        // létrehozom a táblát és megadom milyen adatok lesznek benne
+        // tabla letrehozas
         Schema::create('zenek', function (Blueprint $table) {
             $table->id();
             $table->string('cim')->nullable(false);
