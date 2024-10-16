@@ -13,7 +13,7 @@
     <div class="container mt-3 p-4 bg-secondary rounded w-50">
         <h1 class="text-center">Zenék</h1>
         <form action="" method="POST">
-            <!-- védelmi token, ami kiszűri a hamisítványokat-->
+            <!-- adatok mentese -->
             @csrf
 
             <div class="mb-3">
